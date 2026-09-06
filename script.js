@@ -11,7 +11,7 @@ const form = document.querySelector("form");
 const formMessage = document.querySelector("#form-message");
 
 form.addEventListener("submit", function(event) {
-  event.preventDefault();
+
 
   const name = document.querySelector("#name").value.trim();
   const email = document.querySelector("#email").value.trim();
