@@ -433,3 +433,21 @@ html {
   visibility: visible;
   transform: translateY(0);
 }
+    /* Styling for both cyber and udacity images */
+.cyber, .udacity {
+  display: block;       /* Allows centering and controls spacing */
+  max-width: 90%;       /* Prevents images from touching the edges on mobile */
+  width: 500px;         /* The ideal width on a computer screen */
+  height: auto;         /* Keeps the image aspect ratio perfect (not squished) */
+  margin: 20px auto;    /* Centers the images horizontally and adds spacing above/below */
+  border-radius: 12px;  /* Adds soft, modern rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adds a subtle, professional shadow */
+  transition: transform 0.3s ease; /* Makes a smooth animation when hovered */
+}
+
+/* Optional: Slight pop-out effect when a computer user hovers over the images */
+@media (min-width: 768px) {
+  .cyber:hover, .udacity:hover {
+    transform: translateY(-5px); /* Lifts the image slightly */
+  }
+}
